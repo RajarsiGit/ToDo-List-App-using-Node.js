@@ -11,7 +11,10 @@ var task = [];
 var complete = [];
 
 app.post("/addtask", function(req, res) {
-    task.push(req.body.newtask);
+    var newTask = req.body.newtask;
+    if(newTask != "") {
+        task.push(req.body.newtask);   
+    }
     res.redirect("/");
 });
 
@@ -20,7 +23,7 @@ app.post("/removetask", function(req, res) {
     if (typeof completeTask === "string") {
         complete.push(completeTask);
         task.splice(task.indexOf(completeTask), 1);
-    } else if (typeof completeTask === "object") {
+    } else if (typeof completeTask === "object" ) {
         for (var i = 0; i < completeTask.length; i++) {
             complete.push(completeTask[i]);
             task.splice(task.indexOf(completeTask[i]), 1);
@@ -30,10 +33,10 @@ app.post("/removetask", function(req, res) {
 });
 
 app.get("/", function(req, res) {
-    res.render("index", { task: task, complete: complete });
+    res.render("index", {task: task, complete: complete});
 });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function() {
-    console.log("server is running on port 3000");
+    console.log("Server running on port: " + PORT);
 });

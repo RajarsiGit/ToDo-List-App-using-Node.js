@@ -1,0 +1,45 @@
+body {
+    font-family: "Montserrat";
+    font-weight: normal;
+    background: rgb(245, 245, 245);
+    color: #333333;
+    margin: 3% auto 3% auto;
+}
+
+.title {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    padding: 5%;
+    width: 50%;
+}
+
+form .form-control {
+    display: inline-block;
+    margin: 5% 0 0 0;
+    width: 70%;
+}
+
+form .btn-primary {
+    display: block;
+    margin: 5% 0 0 0;
+    float: right;
+}
+
+form .btn-danger {
+    display: block;
+    margin: 5% 0 0 0;
+}
+
+ul {
+    margin: 5% 5% 0 5%;
+    padding: 0;
+}
+
+li > input {
+    vertical-align: middle;
+    margin: 0 2% 0 2% !important;
+}
