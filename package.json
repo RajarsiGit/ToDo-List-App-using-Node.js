@@ -1,5 +1,5 @@
 {
-  "name": "ToDo-List-App-using-Node.js",
+  "name": "todo-list-app-using-node",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -17,7 +17,7 @@
     "url": "git+https://github.com/RajarsiGit/ToDo-List-App-using-Node.js.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rajarsi Saha <rajarsi3997@gmail.com> (https://rajarsi.ml/)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RajarsiGit/ToDo-List-App-using-Node.js/issues"
